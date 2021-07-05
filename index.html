@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Clock</title>
+
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Stylesheet-->
+    >
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JS-->
+    <script src="main.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+  </head>
+
+  <body onload="template()">
+    <h1 class="text-center my-5 bold pomoHeader">Pomodoro App</h1>
+    <!-- <form action="" class="text-center">
+      <h2>Pomodoro:</h2>
+      <input type="text" id="pomoInput" min="25" />
+      <h2>Short Break:</h2>
+      <input type="text" id="shortInput" />
+      <h2>Long Break:</h2>
+      <input type="text" id="longInput" />
+      <button onclick="getValues()">Submit</button>
+    </form> -->
+
+    <div class="container text-center"></div>
+    <div class="container">
+      <!--Heading-->
+
+      <!-- Main Timer -->
+      <div class="container">
+        <div class="row">
+          <div class="col-5"><h2 id="minutes"></h2></div>
+          <div class="col-2">
+            <h2>:</h2>
+          </div>
+          <div class="col-5"><h2 id="seconds"></h2></div>
+        </div>
+      </div>
+
+      <!-- Finished Message -->
+      <div class="my-5">
+        <h3 id="done" class="text-center"></h3>
+      </div>
+
+      <!-- Start Button and reset button-->
+      <div class="conatiner d-flex justify-content-center my-5">
+        <button class="btn" onclick="start_timer()">
+          <i class="fas fa-play fa-2x"></i>
+        </button>
+        <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+      </div>
+    </div>
+  </body>
+</html>
